@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+
+
+</style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.7.0/dist/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <div class="nav">
+        <img src="/static/img/dmr.png" alt="wordart" width="95%" >
+    </div>
+    <div class="header">
+        <div class="image">
+            <img src="/static/img/me.jpg" alt="me">
+        </div>
+        <img src="/static/img/bio.png" alt="bio" style="width: 50%;" class="p-2 mt-2">
+        <div class="font">
+            <a href="#games"><img src="/static/img/games.png" alt="games" style="width: 11%;" class="p-2"></a>
+            <a href="#projects"><img src="/static/img/projects.png" alt="projects" style="width: 14%;" class="p-2"></a>
+            <a href="#circle" onclick="showText()"><img src="/static/img/about.png" alt="about" style="width: 10%;"
+                    class="p-2"></a>
+        </div>
+        <div class="icons">
+            <a href="https://github.com/RamirezDanielle" class="fab fa-github p-2"> </a>
+            <a href="https://www.linkedin.com/in/danielle-ramirez-1786a3282/" class="fab fa-linkedin p-2"></a>
+        </div>
+    </div>
+    <div class="container">
+        <div id="games">
+            <div class="d-flex justify-content-center align-items-center" style="height: 100vh;">
+                <div id="games-carousel" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#games-carousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#games-carousel" data-slide-to="1"></li>
+                        <li data-target="#games-carousel" data-slide-to="2"></li>
+                        <li data-target="#games-carousel" data-slide-to="3"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active text-center">
+                            <img class="d-block mx-auto" src="/static/img/titlecard.png" alt="title_card"
+                                style="width: 50%;">
+                        </div>
+                        <div class="carousel-item text-center">
+                            <div class="image-container mt-4">
+                                <img class="d-block mx-auto" src="/static/img/mario_demo.png" alt="mario_title"
+                                    style="width: 50%;">
+                                <div class="icons-container">
+                                    <i class="fab fa-html5 fa-lg" style="color: #fcfcfc;"></i>
+                                    <i class="fa-brands fa-css3-alt fa-lg" style="color: #fcfcfc;"></i>
+                                    <i class="fab fa-js-square fa-lg" style="color: #fcfcfc;"></i>
+                                    <img class="d-block mx-auto" src="/static/img/Mario.gif" alt="mario"
+                                        style="width: 50%;">
+                                    <a href="https://github.com/RamirezDanielle/mario_world_demo"
+                                        class="btn btn-outline-light mb-2">CODE</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item text-center">
+                            <div class="image-container mt-4">
+                                <img class="d-block mx-auto" src="/static/img/snake_demo.png" alt="snake_title"
+                                    style="width: 60%;">
+                                <div class="icons-container">
+                                    <i class="fa-brands fa-python fa-lg" style="color: #fcfcfc;"></i>
+                                    <img class="d-block mx-auto" src="/static/img/Snake.gif" alt="snake"
+                                        style="width: 50%;">
+                                    <a href="https://github.com/RamirezDanielle/snake_demo"
+                                        class="btn btn-outline-light mb-2">CODE</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item text-center">
+                            <div class="image-container mt-4">
+                                <img class="d-block mx-auto" src="/static/img/pacman_demo.png" alt="pacman_title"
+                                    style="width: 60%;">
+                                <div class="icons-container">
+                                    <i class="fab fa-html5 fa-lg" style="color: #fcfcfc;"></i>
+                                    <i class="fa-brands fa-css3-alt fa-lg" style="color: #fcfcfc;"></i>
+                                    <i class="fab fa-js-square fa-lg" style="color: #fcfcfc;"></i>
+                                    <img class="d-block mx-auto" src="/static/img/Pacman.gif" alt="pacman">
+                                    <a href="https://github.com/RamirezDanielle/Pacman"
+                                        class="btn btn-outline-light">CODE</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="projects">
+            <div class="d-flex justify-content-center align-items-center" style="height: 100vh;">
+                <div id="projects-carousel" class="carousel slide" data-ride="carousel" >
+                    <ol class="carousel-indicators">
+                        <li data-target="#projects-carousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#projects-carousel" data-slide-to="1"></li>
+                        <li data-target="#projects-carousel" data-slide-to="2"></li>
+                        <li data-target="#projects-carousel" data-slide-to="3"></li>
+                        <li data-target="#projects-carousel" data-slide-to="4"></li>
+                        <li data-target="#projects-carousel" data-slide-to="5"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active text-center">
+                            <img class="d-block mx-auto" src="/static/img/projects_title_card.png" alt="title_card"
+                                style="width: 50%;">
+                        </div>
+
+                        <div class="carousel-item text-center">
+                            <img class="d-block mx-auto" src="/static/img/github.png" alt="github_title"
+                                style="width: 20%;">
+                            <div class="image-container mt-4">
+                                <div class="icons-container">
+                                    <i class="fab fa-html5 fa-lg" style="color: #fcfcfc;"></i>
+                                    <i class="fa-brands fa-css3-alt fa-lg" style="color: #fcfcfc;"></i>
+                                    <i class="fab fa-js-square fa-lg" style="color: #fcfcfc;"></i>
+
+                                    <img class="d-block mx-auto" src="/static/img/UserSearch.gif" alt="mario"
+                                        style="width: 50%;">
+                                    <a href="https://github.com/RamirezDanielle/profile"
+                                        class="btn btn-outline-light">CODE</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item text-center">
+                            <div class="image-container mt-4">
+                                <img class="d-block mx-auto" src="/static/img/MamasNight_White.png" alt="mamas_title"
+                                    style="width: 30%;">
+                                <div class="icons-container">
+                                    <i class="fab fa-html5 fa-lg" style="color: #fcfcfc;"></i>
+                                    <i class="fa-brands fa-css3-alt fa-lg" style="color: #fcfcfc;"></i>
+                                    <i class="fab fa-js-square fa-lg" style="color: #fcfcfc;"></i>
+                                    <i class="fa-brands fa-python fa-lg" style="color: #fcfcfc;"></i>
+                                    <i class="fa-solid fa-database" style="color: #fcfcfc;"></i>
+                                    <img class="d-block mx-auto" src="/static/img/Website_Still_01.png"
+                                        alt="Website_Still_01" style="width: 50%;">
+                                    <a href="https://github.com/RamirezDanielle/Mamas_Night"
+                                        class="btn btn-outline-light">CODE</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item text-center">
+                            <div class="image-container mt-4">
+                                <img class="d-block mx-auto" src="/static/img/MamasNight_White.png" alt="mamas_title"
+                                    style="width: 30%;">
+                                <div class="icons-container">
+                                    <i class="fab fa-html5 fa-lg" style="color: #fcfcfc;"></i>
+                                    <i class="fa-brands fa-css3-alt fa-lg" style="color: #fcfcfc;"></i>
+                                    <i class="fab fa-js-square fa-lg" style="color: #fcfcfc;"></i>
+                                    <i class="fa-brands fa-python fa-lg" style="color: #fcfcfc;"></i>
+                                    <i class="fa-solid fa-database" style="color: #fcfcfc;"></i>
+                                    <img class="d-block mx-auto" src="/static/img/Website_Still_02.png"
+                                        alt="Website_Still_02" style="width: 50%;">
+                                    <a href="https://github.com/RamirezDanielle/Mamas_Night"
+                                        class="btn btn-outline-light">CODE</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item text-center">
+                            <div class="image-container mt-4">
+                                <img class="d-block mx-auto" src="/static/img/MamasNight_White.png" alt="mamas_title"
+                                    style="width: 30%;">
+                                <div class="icons-container">
+                                    <i class="fab fa-html5 fa-lg" style="color: #fcfcfc;"></i>
+                                    <i class="fa-brands fa-css3-alt fa-lg" style="color: #fcfcfc;"></i>
+                                    <i class="fab fa-js-square fa-lg" style="color: #fcfcfc;"></i>
+                                    <i class="fa-brands fa-python fa-lg" style="color: #fcfcfc;"></i>
+                                    <i class="fa-solid fa-database" style="color: #fcfcfc;"></i>
+                                    <img class="d-block mx-auto" src="/static/img/Website_GIF_01.gif"
+                                        alt="Website_GIF_01" style="width: 50%;">
+                                    <a href="https://github.com/RamirezDanielle/Mamas_Night"
+                                        class="btn btn-outline-light">CODE</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item text-center">
+                            <div class="image-container mt-4">
+                                <img class="d-block mx-auto" src="/static/img/MamasNight_White.png" alt="mamas_title"
+                                    style="width: 30%;">
+                                <div class="icons-container">
+                                    <i class="fab fa-html5 fa-lg" style="color: #fcfcfc;"></i>
+                                    <i class="fa-brands fa-css3-alt fa-lg" style="color: #fcfcfc;"></i>
+                                    <i class="fab fa-js-square fa-lg" style="color: #fcfcfc;"></i>
+                                    <i class="fa-brands fa-python fa-lg" style="color: #fcfcfc;"></i>
+                                    <i class="fa-solid fa-database" style="color: #fcfcfc;"></i>
+                                    <img class="d-block mx-auto" src="/static/img/Website_GIF_02.gif"
+                                        alt="Website_GIF_02" style="width: 50%;">
+                                    <a href="https://github.com/RamirezDanielle/Mamas_Night"
+                                        class="btn btn-outline-light">CODE</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="circle" class="circle-wrapper">
+                <div class="circle-txt">
+                    <p id="circle-text" style="display: none;">I attended a coding bootcamp called Coding Dojo, which is part of Colorado Technical
+                        Univeristy. It was a 9-month program where we learned web fundamentals, Python, and algorithms.
+                        I enjoy both the frontend and backend of web development. 
+                    </p>
+                </div>
+            </div>
+            <button id="back-to-top"><i class="fas fa-arrow-up"></i></button>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.getElementById("games-carousel").addEventListener("click", function() {
+                $(this).carousel("next");
+            });
+
+            document.getElementById("projects-carousel").addEventListener("click", function() {
+                $(this).carousel("next");
+
+            });
+  
+    });
+
+    document.getElementById("back-to-top").addEventListener("click", function() {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    });
+    window.addEventListener("scroll", function() {
+        var button = document.getElementById("back-to-top");
+      if (window.scrollY > 300) {
+        button.style.display = "block";
+    } else {
+        button.style.display = "none";
+      }
+    });
+        function showText() {
+            var circleText = document.getElementById("circle-text");
+            circleText.style.display = "block";
+    }
+    </script>
+
+</body>
+
+</html>
