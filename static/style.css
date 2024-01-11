@@ -298,17 +298,17 @@ p {
     margin-top: 50vh; 
 }
 
-.circle-wrapper {
+/* .circle-wrapper {
     width: 45%;
     background:  rgb(230, 108, 161);
     border-radius: 50%;
     position: relative;
     bottom: 0;
   
-}
+} */
 
 
-#circle::after {
+/* #circle::after {
     content: "";
     display: block;
     padding-bottom: 100%;
@@ -325,7 +325,7 @@ p {
     font-size: small;
     color: whitesmoke;
     padding: 10px; 
-}
+} */
 
 @media (min-width: 900px ) {
     body {
