@@ -1,15 +1,44 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
 body {
-    background: rgb(238,174,202);
-    background: radial-gradient(circle, rgba(238,174,202,1) 1%, rgba(148,187,233,1) 85%);
+    background-color: whitesmoke;
+    font-family: Verdana, sans-serif;
+    font-weight: bold;
+    padding: 0 auto;
+    margin: 0 auto;
+    width: 1000px;
+}
+
+#game-body {
+    background: black;
+    background-image: url("/static/img/titlecard.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: bottom center;
+    background-size: 1000px 500px;
     font-family: Verdana, sans-serif;
     padding: 0 auto;
     margin: 0 auto;
     width: 1000px;
 }
 
-
+#projects-body {
+    background: whitesmoke;
+    background-image: url("/static/img/projects_title_card_blk.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: bottom center;
+    background-size: 1000px 120px;
+    font-family: Verdana, sans-serif;
+    padding: 0 auto;
+    margin: 0 auto;
+    width: 1000px;
+}
 .nav {
-    background-color:  rgba(148,187,233,1);
     height: 200px;
     justify-content: center;
     padding: 5px;
@@ -23,15 +52,73 @@ body {
 
 
 .header {
-    background-color: rgba(236, 170, 198, 0.543);
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    font-size: 20px;
+    font-weight: bold;
     padding-top: 5px;
     padding-bottom: 5px;
+    letter-spacing: 1px;
 }
+
+.nav .header a:hover,
+.topbar .navbar a:active,
+.topbar .navbar  a:focus {
+    color:black;
+    font-size: 15px;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px;
+}
+
+/* games/ nav */
+.topbar {
+    display: flex;
+    justify-content: center;
+    
+    
+}
+.topbar .navbar ul li a:hover,
+.topbar .navbar ul li a:active,
+.topbar .navbar ul li a:focus {
+    color: #ffffff;
+    font-size: 15px;
+}
+
+
+
+.topbar .navbar button:hover,
+.topbar .navbar button:active,
+.topbar .navbar button:focus {
+    background-color: #f2f2f2;
+}
+
+.topbar .navbar {
+    display: flex;
+    align-items: center;
+
+}
+
+.topbar .navbar ul {
+    list-style: none;
+}
+
+.topbar .navbar ul li{
+    display: inline-block;
+}
+
+.topbar .navbar ul li a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px;
+
+}
+
 
 .image {
     width: 350px; 
@@ -52,7 +139,56 @@ body {
     margin-top: 100px;
 }
 
-.carousel-inner {
+/* projecs /nav */
+
+.topbar_projects {
+    display: flex;
+    justify-content: center;
+    
+    
+}
+.topbar_projects .navbar_projects ul li a:hover,
+.topbar_projects .navbar_projects ul li a:active,
+.topbar_projects .navbar_projects ul li a:focus {
+    color: black;
+    font-size: 15px;
+}
+
+
+
+.topbar_projects .navbar_projects button:hover,
+.topbar_projects .navbar_projects button:active,
+.topbar_projectsr .navbar_projects :focus {
+    background-color: #f2f2f2;
+}
+
+.topbar_projects .navbar_projects {
+    display: flex;
+    align-items: center;
+
+}
+
+.topbar_projects .navbar_projects ul {
+    list-style: none;
+}
+
+.topbar_projects .navbar_projects ul li{
+    display: inline-block;
+}
+
+.topbar_projects .navbar_projects ul li a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px;
+
+}
+
+
+
+
+/* .carousel-inner {
     margin: 20px; 
     padding: 10px; 
 }
@@ -62,7 +198,8 @@ body {
 }
 .carousel-inner {
   cursor: pointer;
-}
+} */
+
 
 #back-to-top {
 display: none;
@@ -78,7 +215,7 @@ cursor: pointer;
 }
 
 p {
-    color: whitesmoke;
+    color: black;
 }
 
 .icons {
@@ -87,24 +224,59 @@ p {
 
 a {
     text-decoration: none !important;
-    color: whitesmoke;
+    color:black;
 }
 
 
-
-.image-container {
-    font-size: 24px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
 
 .icons-container {
-    display:inline-block;
-    justify-content: center;
-    margin-top: 5px;
-    font-size: 36px;
+    font-size: 24px;
 }
 
+/* games page */
+#games .row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+
+.game-image {
+    width: 420px;
+    height: 100%;
+    object-fit: cover;
+    /* min-width: 420px;
+    width: 300px; */
+    padding: 15px;
+    border: solid whitesmoke;
+    border-radius: 6px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+/* project page */
+
+#projects .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+
+
+
+
+.project-image {
+    width: 300px;
+    height: 100%;
+    object-fit: cover;
+    /* min-width: 300px;
+    width: 100px; */
+    padding: 10px;
+    border: solid;
+    border-radius: 5px;
+    cursor: pointer;
+}
 
 
 #text {
@@ -115,14 +287,16 @@ a {
 
 }
 
-
-
 h3 {
     text-align: center;
     color: #fff;
 }
 
-
+/* about me page */
+p {
+    text-align: center;
+    margin-top: 50vh; 
+}
 
 .circle-wrapper {
     width: 45%;
