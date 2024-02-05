@@ -87,6 +87,15 @@ body {
     padding: 10px;
 }
 
+.menu-icon{
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+  
+}
+
+
+
 /* games/ nav */
 .topbar {
     display: flex;
@@ -203,20 +212,6 @@ body {
 
 
 
-
-/* .carousel-inner {
-    margin: 20px; 
-    padding: 10px; 
-}
-
-.carousel-control-prev, .carousel-control-next {
-  display: none;
-}
-.carousel-inner {
-  cursor: pointer;
-} */
-
-
 #back-to-top {
 display: none;
 position: fixed;
@@ -318,34 +313,6 @@ p {
 }
 
 
-/* .circle-wrapper {
-    width: 45%;
-    background:  rgb(230, 108, 161);
-    border-radius: 50%;
-    position: relative;
-    bottom: 0;
-  
-} */
-
-
-/* #circle::after {
-    content: "";
-    display: block;
-    padding-bottom: 100%;
-}
-
-
-.circle-txt {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 80%; 
-    text-align: center;
-    font-size: small;
-    color: whitesmoke;
-    padding: 10px; 
-} */
 /* 
 @media only screen and (min-width: 600px ) {
     body {
@@ -372,15 +339,14 @@ p {
 
 } */
 
-@media (max-width: 600px) {
+@media only screen and (max-width: 600px) {
     body {
         font-size: 14px;
     }
-
-    .nav {
+    nav {
         text-align: center;
-        
     }
+    
     .header {
     margin-top: 20px; 
     }
@@ -402,14 +368,14 @@ p {
         background-size: contain;
         justify-content: center;
     }
-    
+
     .row {
         text-align: center;
     }
     
     .col-container {
         align-items: center;
-    };
+    }
     
     .col {
         flex-basis: 100%;
@@ -436,21 +402,32 @@ p {
     }
  /* -----products page------ */
     #projects-body {
-    background-size: contain;
+        background-size: contain;
     }
+    
     .topbar_projects {
-        padding: 10px;
-        margin-bottom: 50px;
+        /* position: fixed; */
+        top: 0;
+        width: 100%;
+        z-index: 1000;
     }
-    .navbar_projects ul {
+    
+    /* .navbar_projects ul {
         flex-direction: column;
         align-items: center;
         margin: 0;
         padding: 0;
+    } */
+
+    #projects {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
     }
 
-    .navbar_projects li {
-        margin-bottom: 20px;
+    .mobile-placeholder {
+        height: 5px;
     }
     .row {
         text-align: center;
