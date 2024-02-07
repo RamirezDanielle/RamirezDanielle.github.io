@@ -28,7 +28,7 @@ body {
 
 #projects-body {
     background: whitesmoke;
-     background-image: url("/static/img/projects_title_card_blk.png");
+    background-image: url("/static/img/projects_title_card_blk.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: bottom center;
@@ -48,9 +48,6 @@ body {
     margin: 0 auto;
 }
 
-
-
-
 .nav {
     height: 200px;
     justify-content: center;
@@ -62,7 +59,6 @@ body {
     justify-content: center;
     
 }
-
 
 .header {
     display: flex;
@@ -87,12 +83,7 @@ body {
     padding: 10px;
 }
 
-.menu-icon{
-    width: 28px;
-    margin-left: 20px;
-    display: none;
-  
-}
+
 
 
 
@@ -101,6 +92,7 @@ body {
     display: flex;
     justify-content: center;
 }
+
 .topbar .navbar ul li a:hover,
 .topbar .navbar ul li a:active,
 .topbar .navbar ul li a:focus {
@@ -108,13 +100,19 @@ body {
     font-size: 15px;
 }
 
+.icons a:hover,
+.icons a:active,
+.icons a:focus {
+    color: #ffffff;
+    font-size: 15px;
+}
 
-
-.topbar .navbar button:hover,
-.topbar .navbar button:active,
-.topbar .navbar button:focus {
+.topbar .navbar  button:hover,
+.topbar .navbar  button:active,
+.topbar .navbar  button:focus {
     background-color: #f2f2f2;
 }
+
 
 .topbar .navbar {
     display: flex;
@@ -139,6 +137,7 @@ body {
 
 }
 
+
 .row-center {
     display: flex;
     justify-content: center;
@@ -161,10 +160,10 @@ body {
 
 #games {
     padding: 20px;
-    margin-top: 100px;
+    margin-top: 10px;
 }
 
-/* projecs /nav */
+/* projects /nav */
 
 .topbar_projects {
     display: flex;
@@ -210,21 +209,12 @@ body {
 
 }
 
-
-
-#back-to-top {
-display: none;
-position: fixed;
-bottom: 20px;
-right: 20px;
-z-index: 99;
-background-color: rgba(148,187,233,1);
-color: #fff;
-border: none;
-padding: 10px 20px;
-cursor: pointer;
+#projects-body .icons a:hover,
+#projects-body .icons a:active,
+#projects-body .icons a:focus {
+    color:black;
+    font-size: 15px;
 }
-
 p {
     color: black;
 }
@@ -253,21 +243,21 @@ a {
 
 
 .game-image {
-    width: 420px;
+    width: 400px;
     height: 100%;
-    object-fit: cover;
+    /* object-fit: cover;
     min-width: 420px;
     width: 300px;
-    padding: 15px;
-    border: solid whitesmoke;
-    border-radius: 6px;
+    padding: 15px; */
+    /* border: solid whitesmoke;
+    border-radius: 6px; */
     cursor: pointer;
-    margin: 10px;
+    /* margin: 10px; */
 }
 
 /* project page */
 
-#projects .container {
+#projects  {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -280,30 +270,55 @@ a {
 
 
 .project-image {
-    width: 300px;
+    position: relative;
+    width: 400px;
     height: 100%;
-    object-fit: cover;
+    /* object-fit: cover;
     min-width: 300px;
-    width: 100px;
-    padding: 10px;
-    border: solid;
-    border-radius: 5px;
+    padding: 10px; */
+    /* border: solid;
+    border-radius: 5px; */
     cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
+.project-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+#projects .row, #projects .row-2{
+    display: flex;
+    flex-wrap: wrap;
+    margin: -10px;
+}
+
+
+#projects .col{
+    flex: 1;
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+#text, h3 {
+    text-align: center;
+    color: #fff;
+}
 
 #text {
-    text-align: center;
     font-size: 24px;
-    color: #fff;
     padding: 8px 0;
-
 }
 
-h3 {
-    text-align: center;
-    color: #fff;
+#projects a {
+   font-weight: bold;
 }
+
+
+
 
 /* about me page */
 
@@ -406,7 +421,6 @@ p {
     }
     
     .topbar_projects {
-        /* position: fixed; */
         top: 0;
         width: 100%;
         z-index: 1000;
@@ -423,18 +437,19 @@ p {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-bottom: 20px;
+        margin-top: 20px;
     }
 
     .mobile-placeholder {
         height: 5px;
     }
-    .row {
+    .row, .row-2 {
         text-align: center;
+        margin-top: 10px;
+     
     }
 
     .col {
-        padding-top: 10px;
         flex-basis: 100%;
     }
 
